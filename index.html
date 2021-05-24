@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Areksoft Technologies</title>
+</head>
+
+<body>
+  <header class="top flex justify-between items-center">
+    <h3>Email: support@unicuslearning.com</h3>
+    <h3>Call +91 9398949451</h3>
+  </header>
+
+  <!-- ================== Navigation Start =================== -->
+  <header class="navigation flex items-center justify-between">
+    <div class="navigation-left">
+      <a href="#"><img src="Images/logo/Main-logo.png" alt=""></a>
+    </div>
+
+    <div class="navigation-right flex items-center">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Course</a>
+      <a href="#">Contact</a>
+      <div class="btn-wrapper">
+        <button id="signin" class="nav-btn">SignIn</button>
+        <button id="signup" class="nav-btn">SignUp</button>
+      </div>
+    </div>
+
+    <div class="nav-img" onclick="toggle()">
+      <img src="Images/logo/menu-btn.png" alt="">
+    </div>
+  </header>
+
+  <div class="sm-wrapper">
+    <div class="sm-nav navigation-right flex flex-col items-center justify-between">
+      <a href="#" onclick='toggle()'>Home</a>
+      <a href="#" onclick='toggle()'>About</a>
+      <a href="#" onclick='toggle()'>Product</a>
+      <a href="#services" onclick='toggle()'>Service</a>
+      <a href="#" onclick='toggle()'>Works</a>
+      <a href="#" onclick='toggle()'>Training</a>
+      <a href="#" onclick='toggle()'>Contact</a>
+      <a href="#" onclick='toggle()'>Support</a>
+      <div class="btn-wrapper">
+        <button id="signin" class="nav-btn">SignIn</button>
+        <button id="signup" class="nav-btn">SignUp</button>
+      </div>
+    </div>
+  </div>
+  <!-- ================== Navigation End =================== -->
+
+
+  <!-- ================== Navigation Banner Start =================== -->
+  <div class="banner flex items-center">
+    <div class="banner-content">
+      <h1>Learn Artificial Intelligence with Unicus Learning anytime, anywhere.</h1>
+      <button type="button" class="getstart banner-btn" name="button">Get Started</button>
+    </div>
+    <img src="Images/banner-img.png" alt="">
+  </div>
+  <!-- =========================== Navigation banner End =========================== -->
+
+
+
+  <!-- ========================== Facilities Section Start ======================== -->
+  <!-- s</section> -->
+  <!-- ============================= Advantages Section End ========================= -->
+
+
+  <!-- ============================== Footer Start ============================ -->
+  <!-- <footer class="flex justify-between items-center flex-wrap">
+    <h3>Copyright @ 2021 | ArekSoft Technologies</h3>
+    <h3>Designed by <span>Abhishek</span></h3>
+  </footer> -->
+  <!-- ============================== Footer End ============================ -->
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script>
+    var TIMEOUT = 6000;
+    var interval = setInterval(handleNext, TIMEOUT);
+
+    function handleNext() {
+
+      var $radios = $('input[class*="slide-radio"]');
+      var $activeRadio = $('input[class*="slide-radio"]:checked');
+
+      var currentIndex = $activeRadio.index();
+      var radiosLength = $radios.length;
+
+      $radios.attr('checked', false);
+
+      if (currentIndex >= radiosLength - 1) {
+        $radios.first().attr('checked', true);
+      }
+      else {
+        $activeRadio.next('input[class*="slide-radio"]').attr('checked', true);
+      }
+    }
+  </script>
+
+  <script>
+    var sm_nav = document.querySelector('.sm-nav');
+    function toggle() {
+      sm_nav.classList.toggle('nav-transition');
+    }
+  </script>
+</body>
+
+</html>

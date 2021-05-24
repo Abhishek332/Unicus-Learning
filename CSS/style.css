@@ -1,0 +1,312 @@
+/* ======================== CSS Reset ======================== */
+*{
+  margin : 0;
+  padding: 0;
+  outline : none;
+  box-sizing: border-box;
+  font-family : "Lato-Regular";
+  font-size : 15px;
+  scroll-behavior: smooth;
+  border: none;
+  cursor: pointer;
+}
+
+body{
+  height : 3000px;
+}
+
+p{
+  font-family : "Raleway-Medium";
+  font-size : 1.3rem;
+  line-height: 2rem;
+  word-spacing: 0.3rem;
+  text-align: center;
+}
+
+section{
+padding : 100px;
+width : 100%;
+}
+
+section h1{
+  font-family : 'Pattaya';
+  font-size : 3rem;
+  color : rgb(36, 248, 220);
+  font-weight : bold;
+  text-align : center;
+  letter-spacing : 4px;
+  word-spacing: 3px;
+  text-shadow : 0.2rem 0.2rem 0.1rem rgb(20, 20, 17);
+  margin-bottom: 20px;
+}
+/* ============================================================ */
+
+
+/* ======================== FONTS ======================== */
+
+@font-face{
+  font-family : "Lato-Regular";
+  src : url('../Fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face{
+  font-family : 'Lato-Black';
+  src : url('../Fonts/Lato/Lato-Black.ttf');
+}
+
+@font-face{
+  font-family : "Lato-Bold";
+  src : url('../Fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face{
+  font-family : "NotoSansJP-Medium";
+  src : url('../Fonts/Noto/NotoSansJP-Medium.otf');
+}
+
+@font-face{
+  font-family : "NotoSansJP-Bold";
+  src : url('../Fonts/Noto/NotoSansJP-Bold.otf');
+}
+/* ============================================================ */
+
+
+
+/* =================== Utility Classes Start ================== */
+.flex{
+  display : flex;
+}
+
+.items-center{
+  align-items : center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.wrap{
+flex-wrap : wrap;
+}
+
+.content-center{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+/* =================== Utility Classes End ================== */
+
+
+
+/* ====================== Navbar Start ====================== */
+header.top{
+  padding : 20px 80px;
+  letter-spacing : 1.2px;
+  color : white;
+  z-index : 100;
+  background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);
+}
+
+ header.navigation {
+  width: 100%;
+  height: 90px;
+  padding: 0 100px;
+  z-index: 100;
+  box-shadow : 0px 0px 15px rgb(44, 44, 44);
+  background-color: white;
+}
+
+header.navigation .navigation-left{
+    min-width : 325px;
+    height : 65px;
+    position: relative;
+}
+
+header.navigation .navigation-left a img{
+  position : absolute;
+  height : 100%;
+  width : 100%;
+}
+
+.navigation-right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333745;
+  font-size: 14px;
+  font-family : "NotoSansJP-Bold";
+  padding : 5px 15px;
+  border: 2px solid transparent;
+  border-radius: 0px 15px;
+  text-align: center;
+  line-height: 25px;
+  transition: all .3s;
+}
+
+header.navigation .navigation-right .btn-wrapper{
+  margin-left : 20px;
+}
+
+.nav-btn{
+  margin : 10px;
+  padding : 12px 20px;
+  font-family : "NotoSansJP-Medium";
+  font-size: 1rem;
+  border-radius : 8px;
+  color : white;
+}
+
+.nav-btn:hover{
+  box-shadow : inset 0px 0px 30px rgba(0, 0, 0, 0.246);
+}
+
+.nav-btn:nth-child(1){
+  background: #0c2d50;
+}
+
+.nav-btn:nth-child(2){
+  background: linear-gradient(90deg, #BF7822 0%, rgba(191, 120, 34, 0.88) 100%);
+}
+
+header.navigation .navigation-right a:hover,
+header.navigation .navigation-right a:focus {
+  border-color: rgb(234, 46, 73);
+}
+
+.navigation .nav-img{
+  outline : none;
+  display: none;
+}
+
+.sm-wrapper{
+  overflow: hidden;
+  position: absolute;
+  width : 100vw;
+  height : 100vh;
+}
+
+.sm-nav{
+  z-index: 2;
+  background : rgb(0, 0, 0);
+  padding : 20px 0px;
+  transition: all 0.5s;
+  transform : translateX(-100%);
+  position : relative;
+  width : 100%;
+  height : 100%;
+}
+
+.sm-nav a{
+  color : white;
+}
+
+.nav-transition{
+  transform : translateX(0%);
+}
+
+.sm-nav.navigation-right a{
+  width : 100px;
+}
+
+/* ======================= Navigation Ends ====================*/
+
+
+/* ==================== Banner Start ===================== */ 
+.banner {
+  background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);  
+  padding : 120px;
+  position : relative;
+}
+
+.banner .banner-content {
+  width: 60%;
+}
+
+.banner h1 {
+  font-family : "Lato-Black";
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-bottom : 20px;
+}
+
+.banner img {
+  position : absolute;
+  height : 85%;
+  bottom: 0;
+  right : 5%;
+  transform: translateY(10px);
+}
+
+.banner-btn {
+  background-color: #f6062a;
+  border-radius: 6px;
+  padding : 15px 35px;
+  font-family: "Lato-Black";
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  margin : 25px 0px;
+}
+
+.banner-btn:hover {
+  box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
+  background : transparent;
+  color : black;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1135px) {
+  header.top{
+    padding : 15px 30px;
+  }
+
+  header.navigation{
+    padding : 0px 30px;
+  }
+
+  .banner{
+    padding : 120px 50px;
+  }
+
+  .banner img{
+    right : 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+
+  header.navigation .navigation-right{
+    display : none;
+  }
+
+  .navigation .nav-img{
+    display : block;
+  }
+
+  .banner{
+    flex-direction: column;
+    padding-bottom : 0;
+  }
+
+  .banner .banner-content{
+    width : 80%;
+  }
+
+  .banner img{
+    position : relative;
+  }
+}
