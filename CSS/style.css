@@ -11,12 +11,8 @@
   cursor: pointer;
 }
 
-body{
-  height : 3000px;
-}
-
 p{
-  font-size : 13px;
+  font-size : 15px;
   line-height: 1.5rem;
   word-spacing: 0.3rem;
   text-align: center;
@@ -28,15 +24,12 @@ width : 100%;
 }
 
 section h1{
-  font-family : 'Pattaya';
+  font-family : 'Lato-Black';
   font-size : 3rem;
-  color : rgb(36, 248, 220);
-  font-weight : bold;
   text-align : center;
   letter-spacing : 4px;
   word-spacing: 3px;
-  text-shadow : 0.2rem 0.2rem 0.1rem rgb(20, 20, 17);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 /* ============================================================ */
 
@@ -277,40 +270,67 @@ header.navigation .navigation-right a:focus {
 /* ==================== Banner End ===================== */ 
 
 /* ========================= Facility Section Start ======================= */
-section.facilities .content{
-  width : 80%;
+section.facilities .content h1,
+section.facilities .content p{
+  text-align : left;
 }
+
 .f-btn{
-  background-color: rgba(119, 22, 211, 0.883);
+  background-color: rgba(90, 17, 158, 0.883);
 }
 
-.card-wrapper{
-  /* padding : 20px; */
+.card-wrapper > div:hover{
+  transform : translateY(-15px);
+  transition: 0.5s;
 }
 
-.card-wrapper .card{
+.facilities .card{
   height : 200px;
   width : 180px;
   box-shadow : 0 0 10px rgba(128, 128, 245, 0.664);
-  magrin: 20px;
+  margin: 30px;
   padding : 10px;
   text-align: center;
 }
 
-.card-wrapper .card .img-wrapper{
+.card .img-wrapper{
   width : 50px;
   height : 50px;
   position : ralative;
   margin : 20px;
 }
 
-.card-wrapper .card .img-wrapper img{
+.card .img-wrapper img{
   width : 100%;
   height : 100%;
 }
 
 /* ========================= Facility Section End ======================= */
 
+
+
+/* ================================ Footer Start ============================ */
+footer{
+  box-shadow : 0px -1px 10px white;
+  padding : 0.5rem 2rem;
+  background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);  
+}
+
+footer h3{
+  text-align: center;
+  color : white;
+}
+
+footer h3 span{
+  font-family : "Lobster";
+  font-style: italic;
+  letter-spacing: .2rem;
+  font-size : 1.5rem;
+  color : yellow;
+  margin-left : .2rem;
+}
+
+/* ================================ Footer End ============================ */
 
 
 
@@ -357,6 +377,10 @@ section.facilities .content{
   .banner img{
     position : relative;
   }
+
+  section.facilities > div{
+    flex-wrap : wrap;
+  }
 }
 
 
@@ -376,5 +400,9 @@ section.facilities .content{
 
   .banner .banner-content{
     width : 100%;
-  }  
+  }
+  
+  .card-wrapper{
+    flex-wrap: wrap;
+  }
 }

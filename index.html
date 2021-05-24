@@ -65,54 +65,59 @@
 
 
   <!-- ========================== Facilities Section Start ======================== -->
-  <section class="facility content-center flex-wrap">
-    <div class="content">
-      <p>Why unicus</p>
-      <h1>We provide the best training in the industry.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <section class="facilities">
+    <div class="flex items-center">
+      <div class="content">
+        <p>Why unicus</p>
+        <h1>We provide the best training in the industry.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button type="button" class="getstart f-btn" name="button">Get Started</button>
-    </div>
-    <div class="card-wrapper content-center">       
-      <div class="card">
-        <div class="img-wrapper">
-          <img src="Images/img1.png" alt="">
-        </div>
-        <h3>Experienced faculty</h3>
-        <p>Lorem ipsum dolor sit
-          amet, consectetur
-          adipiscing elit,</p>
       </div>
-      <div class="card">
-        <div class="img-wrapper">
-          <img src="Images/img2.png" alt="">
+      <div class="card-wrapper content-center">
+        <div class="card-wrapper1">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="Images/img1.png" alt="">
+            </div>
+            <h3>Experienced faculty</h3>
+            <p>Lorem ipsum dolor sit
+              amet, consectetur
+              adipiscing elit,</p>
+          </div>
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="Images/img3.png" alt="">
+            </div>
+            <h3>Certifications</h3>
+            <p>Lorem ipsum dolor sit
+              amet, consectetur
+              adipiscing elit,</p>
+          </div>
         </div>
-        <h3>Experienced faculty</h3>
-        <p>Lorem ipsum dolor sit
-          amet, consectetur
-          adipiscing elit,</p>
-      </div>
-      <div class="card">
-        <div class="img-wrapper">
-          <img src="Images/img3.png" alt="">
+        <div class="card-wrapper2">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="Images/img2.png" alt="">
+            </div>
+            <h3>Live Projects</h3>
+            <p>Lorem ipsum dolor sit
+              amet, consectetur
+              adipiscing elit,</p>
+          </div>
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="Images/img4.png" alt="">
+            </div>
+            <h3>Hands-on</h3>
+            <p>Lorem ipsum dolor sit
+              amet, consectetur
+              adipiscing elit,</p>
+          </div>
         </div>
-        <h3>Experienced faculty</h3>
-        <p>Lorem ipsum dolor sit
-          amet, consectetur
-          adipiscing elit,</p>
       </div>
-      <div class="card">
-        <div class="img-wrapper">
-          <img src="Images/img4.png" alt="">
-        </div>
-        <h3>Experienced faculty</h3>
-        <p>Lorem ipsum dolor sit
-          amet, consectetur
-          adipiscing elit,</p>
-      </div>
-
     </div>
   </section>
 
@@ -120,38 +125,15 @@
 
 
   <!-- ============================== Footer Start ============================ -->
-  <!-- <footer class="flex justify-between items-center flex-wrap">
+  <footer class="flex justify-between items-center flex-wrap">
     <h3>Copyright @ 2021 | ArekSoft Technologies</h3>
     <h3>Designed by <span>Abhishek</span></h3>
-  </footer> -->
+  </footer>
   <!-- ============================== Footer End ============================ -->
 
 
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-  <script>
-    var TIMEOUT = 6000;
-    var interval = setInterval(handleNext, TIMEOUT);
-
-    function handleNext() {
-
-      var $radios = $('input[class*="slide-radio"]');
-      var $activeRadio = $('input[class*="slide-radio"]:checked');
-
-      var currentIndex = $activeRadio.index();
-      var radiosLength = $radios.length;
-
-      $radios.attr('checked', false);
-
-      if (currentIndex >= radiosLength - 1) {
-        $radios.first().attr('checked', true);
-      }
-      else {
-        $activeRadio.next('input[class*="slide-radio"]').attr('checked', true);
-      }
-    }
-  </script>
 
   <script>
     var sm_nav = document.querySelector('.sm-nav');
