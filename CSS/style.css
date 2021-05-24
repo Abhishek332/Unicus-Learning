@@ -9,7 +9,11 @@
   scroll-behavior: smooth;
   border: none;
   cursor: pointer;
+}
+
+body{
   overflow-x : hidden;
+  width : 100vw;
 }
 
 p{
@@ -20,7 +24,7 @@ p{
 }
 
 section{
-padding : 100px;
+padding : 5%;
 width : 100%;
 }
 
