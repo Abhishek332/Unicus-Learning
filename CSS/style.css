@@ -15,7 +15,7 @@ p{
   font-size : 18px;
   line-height: 1.5rem;
   word-spacing: 0.3rem;
-  text-align: center;
+  word-spacing: 0.3rem;
 }
 
 section{
@@ -25,11 +25,20 @@ width : 100%;
 
 section h1{
   font-family : 'Lato-Black';
-  font-size : 3rem;
+  font-size : 35px;
   text-align : center;
   letter-spacing : 4px;
   word-spacing: 3px;
   margin-bottom: 25px;
+}
+
+section h1::after{
+  content : '';
+  display : block;
+  width : 150px;
+  height : 6px;
+  background-color: rgb(5, 5, 43);
+  margin : 20px auto 5px;
 }
 /* ============================================================ */
 
@@ -273,9 +282,16 @@ header.navigation .navigation-right a:focus {
 /* ==================== Banner End ===================== */ 
 
 /* ========================= Facility Section Start ======================= */
-section.facilities .content h1,
-section.facilities .content p{
+section.facilities .content{
+  padding : 0px 20px;
+}
+
+section.facilities .content h1{
   text-align : left;
+}
+
+section.facilities .content h1::after{
+  margin : 20px 0px 5px;
 }
 
 .f-btn{
@@ -315,11 +331,121 @@ section.facilities .content p{
 /* ========================= Facility Section End ======================= */
 
 
+/* ============================ Courses Section Start ========================= */
+section.courses .container1{
+  background: linear-gradient(#4e092f 0.2%, #83064b 70%, #4e092f 100%);
+  padding : 40px; 
+  width : 100%;
+}
+
+section.courses .img-wrapper{
+  height : 100px;
+  width : 100px;
+  min-width : 100px;
+  position : relative;
+  background : #f31d93;
+  box-shadow : 0px 0px 10px 1px #83064b;
+  border-radius: 50%;
+  margin : 0px 20px;
+}
+
+section.courses .img-wrapper > div{
+  background : #f31d93;
+  box-shadow : 0px 0px 20px #360420;
+  border-radius: 50%;
+  height : 85%;
+  width : 85%;
+}
+
+section.courses .img-wrapper > div > div{
+  border-radius: 50%;
+  height : 85%;
+  width : 85%;
+  background : white;
+}
+
+section.courses .img-wrapper > div > div img{
+  width : 50%;
+  height :50%;
+}
+
+section.courses .content{
+  margin-left : 20px;
+  color : white;
+}
+
+section.courses .content h2{
+  font-family : "Lato-Black";
+  letter-spacing: 2px;
+  font-size : 30px;
+  margin-bottom : 10px;
+}
+
+
+
+section.courses .container2 .outer1{
+  width : 100%;
+}
+
+section.courses .container2 .outer1 .first{
+  background: linear-gradient(#493f3fd3  0.2%, #493f3f9f 70%, #493f3fd3 100%);  
+  padding : 20px;
+  width : 100%;
+}
+
+section.courses .container2 .outer1 .first .img-wrapper{
+  transform: scale(0.7);
+  background: #8875759f;
+}
+
+section.courses .container2 .outer1 .first .img-wrapper>div{
+  
+  background: #8b26269f;
+}
+
+section.courses .container2 .outer1 .second .second1{
+  padding : 30px;
+  background: linear-gradient(90deg, #4b2929e7 20%, #634e4ebd 100%);
+  width : 100%;
+}
+
+section.courses .container2 .outer1 .second .second2{
+  padding : 30px;
+  width : 100%;
+  background: linear-gradient(90deg, rgb(135, 148, 15) 25%, rgba(156, 154, 15, 0.705) 100%);  
+}
+
+section.courses .container2 .outer2{
+  background : rgb(243, 223, 223);
+  min-width : 350px;
+  padding : 30px;
+}
+
+section.courses .container2 .outer2 .content{
+  text-align: center;
+  color : black;
+}
+
+section.courses .container2 .outer2 .img-wrapper{
+  transform: scale(0.7);
+  background : white;
+}
+
+section.courses .container2 .outer2 .img-wrapper>div,
+section.courses .container2 .outer2 .img-wrapper>div>div{
+  background : white;
+}
+/* ============================ Courses Section End ========================= */
+
+
+
+
+
 
 /* ================================ Footer Start ============================ */
 footer{
   box-shadow : 0px -1px 10px white;
-  padding : 0.5rem 2rem;
+  padding : 1rem 2rem;
   background: linear-gradient(90.25deg, #061C33 0.2%, #38618D 98.77%);  
 }
 
@@ -388,11 +514,24 @@ footer h3 span{
   section.facilities > div{
     flex-wrap : wrap;
   }
+
+
+  section.courses .container2{
+    flex-wrap : wrap;
+  }
+
+  section.courses .container2 .outer2{
+    width : 100%;
+  }
 }
 
 
 
 @media only screen and (max-width: 470px){
+.banner{
+  transform : scale(0.9);
+}
+
   header.top{
     padding : 15px 10px;
   }
@@ -411,5 +550,17 @@ footer h3 span{
   
   .card-wrapper{
     flex-wrap: wrap;
+  }
+
+  section.courses .container2 .outer1 .second,
+  section.courses .container1,
+  section.courses .container2 .outer1 .first
+  {
+    flex-wrap : wrap; 
+    justify-content : center;
+  }
+
+  section.courses{
+    text-align: center;
   }
 }
